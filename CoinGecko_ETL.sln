@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "CoinGecko_ETL", "CoinGecko_ETL\CoinGecko_ETL.dtproj", "{9F714EA8-5B4D-7C3A-9F79-58940A1DE8CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F714EA8-5B4D-7C3A-9F79-58940A1DE8CA}.Development|Default.ActiveCfg = Development
+		{9F714EA8-5B4D-7C3A-9F79-58940A1DE8CA}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F8B5489-5B55-43A2-BF40-5F4105DC3F12}
+	EndGlobalSection
+EndGlobal

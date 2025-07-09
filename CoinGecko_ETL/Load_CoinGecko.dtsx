@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Load_CoinGecko"
   DTS:PackageType="5"
-  DTS:VersionBuild="133"
-  DTS:VersionGUID="{1AD6D00D-1D25-48FB-A276-C05DD8FCAD93}">
+  DTS:VersionBuild="170"
+  DTS:VersionGUID="{E4267A1D-F68D-4EFF-8E82-508BF39858C8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -168,6 +168,116 @@
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
               DTS:DTSID="{DAADBC38-6DE6-42D5-A607-C0DE81D856DD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{12DA98AC-4FE4-4D48-AF1D-D4B5A31EB889}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2070"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\filip\OneDrive\Ambiente de Trabalho\Engenharia de dados\dataset.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{50E45ADB-EA6F-4C8F-AEF8-C58144197EF8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="open"
+              DTS:DTSID="{75F1D7F4-FFEF-48A4-AC27-1E881B3E6EBE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="high"
+              DTS:DTSID="{0A0DDB4D-4AA5-4B9F-AB40-DA4225DC9F17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="low"
+              DTS:DTSID="{689B1C7C-800D-4244-A484-4A4017CAAE52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="close"
+              DTS:DTSID="{3416E10E-5EBE-4059-A099-80F34FD4079E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="volume"
+              DTS:DTSID="{0552776B-D8BC-493D-A1FC-0A6A2ECE5346}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="marketCap"
+              DTS:DTSID="{04DD7CD2-B81F-4DD4-87B3-F71DE5CC22C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="timestamp"
+              DTS:DTSID="{DB574323-C54D-4904-8B37-DF1EEA70AEFF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="crypto_name"
+              DTS:DTSID="{95316FD2-BB79-44A4-8EA9-201CD4BD5A11}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{39B8EB7D-42B9-42E1-8A46-26C61476DA7E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -447,35 +557,14 @@
           Language="CSharp"
           ReadWriteVariables="User::RunId">
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_7dbcb6698d6045889d6f0779e4808f61")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_7dbcb6698d6045889d6f0779e4808f61")]
-[assembly: AssemblyCopyright("Copyright @  2025")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -847,14 +936,35 @@ namespace ST_7dbcb6698d6045889d6f0779e4808f61.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_7dbcb6698d6045889d6f0779e4808f61")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_7dbcb6698d6045889d6f0779e4808f61")]
+[assembly: AssemblyCopyright("Copyright @  2025")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1059,6 +1169,597 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:ObjectName="For Loop Container">
           <DTS:Variables />
           <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Sequence Container\For Loop Container\Data Flow Task"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{B71BE0DA-E03C-4759-99FE-087A78AE2521}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Data Flow Task"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column"
+                      componentClassID="Microsoft.DerivedColumn"
+                      contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                      name="Derived Column"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                          description="Input to the Derived Column Transformation"
+                          name="Derived Column Input">
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                          description="Default Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          name="Derived Column Output"
+                          synchronousInputId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[load_run_id]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              length="50"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[load_run_id]"
+                              name="load_run_id"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_WSTR,50)@[User::RunId]</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_WSTR,50)@[User::RunId]</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[load_created_on]"
+                              dataType="dbTimeStamp"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[load_created_on]"
+                              name="load_created_on"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">[GETDATE]()</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">GETDATE()</property>
+                              </properties>
+                            </outputColumn>
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                          description="Error Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Derived Column Error Output"
+                          synchronousInputId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source"
+                      componentClassID="Microsoft.FlatFileSource"
+                      contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                      description="Flat File Source"
+                      localeId="2070"
+                      name="Flat File Source"
+                      usesDispositions="true"
+                      version="1">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Specifies whether zero-length columns are treated as null."
+                          name="RetainNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                          name="FileNameColumnName"></property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                          connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                          connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                          name="FlatFileConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                          name="Flat File Source Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[volume]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[volume]"
+                              length="50"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[volume]"
+                              name="volume"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the data is in binary format."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[marketCap]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[marketCap]"
+                              length="50"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[marketCap]"
+                              name="marketCap"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the data is in binary format."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[crypto_name]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[crypto_name]"
+                              length="50"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[crypto_name]"
+                              name="crypto_name"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the data is in binary format."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[close]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[close]"
+                              length="50"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[close]"
+                              name="close"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the data is in binary format."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                              length="50"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[date]"
+                              name="date"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                  name="FastParse">false</property>
+                                <property
+                                  dataType="System.Boolean"
+                                  description="Indicates whether the data is in binary format."
+                                  name="UseBinaryFormat">false</property>
+                              </properties>
+                            </outputColumn>
+                          </outputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 0]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="Column 0" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[open]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="open" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[high]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="high" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[low]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="low" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[close]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="close" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[volume]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="volume" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[marketCap]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="marketCap" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[timestamp]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="timestamp" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[crypto_name]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="crypto_name" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="date" />
+                          </externalMetadataColumns>
+                        </output>
+                        <output
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                          isErrorOut="true"
+                          name="Flat File Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                              codePage="1252"
+                              dataType="text"
+                              description="Flat File Source Error Output Column"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                              name="Flat File Source Error Output Column" />
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination"
+                      componentClassID="Microsoft.OLEDBDestination"
+                      contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="OLE DB Destination"
+                      name="OLE DB Destination"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">[dbo].[Staging_CoinPrices_Raw]</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the column code page to use when code page information is unavailable from the data source."
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Forces the use of the DefaultCodePage property value when describing character data."
+                          name="AlwaysUseDefaultCodePage">false</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">3</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepIdentity">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                          name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                          name="FastLoadMaxInsertCommitSize">2147483647</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[localhost.Datawarehouse_CG]"
+                          connectionManagerRefId="Package.ConnectionManagers[localhost.Datawarehouse_CG]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                          errorOrTruncationOperation="Insert"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="OLE DB Destination Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[crypto_name]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="crypto_name"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[crypto_name]"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[crypto_name]" />
+                            <inputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="date"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[date]" />
+                            <inputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[load_created_on]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="load_created_on"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[load_created_on]"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[load_created_on]" />
+                            <inputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[close]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="close"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[close_txt]"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[close]" />
+                            <inputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[volume]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="volume"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[volume_txt]"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[volume]" />
+                            <inputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[marketCap]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="marketCap"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[mcap_txt]"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[marketCap]" />
+                            <inputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[load_run_id]"
+                              cachedDataType="wstr"
+                              cachedLength="50"
+                              cachedName="load_run_id"
+                              externalMetadataColumnId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[load_run_id]"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[load_run_id]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[crypto_name]"
+                              codePage="1252"
+                              dataType="str"
+                              length="100"
+                              name="crypto_name" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="date" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[close_txt]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="close_txt" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[volume_txt]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="volume_txt" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[mcap_txt]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="mcap_txt" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[load_run_id]"
+                              dataType="wstr"
+                              length="50"
+                              name="load_run_id" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[load_created_on]"
+                              dataType="dbTimeStamp2"
+                              name="load_created_on"
+                              scale="7" />
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="OLE DB Destination Error Output"
+                          synchronousInputId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Sequence Container\For Loop Container\Data Flow Task\Row Count"
+                      componentClassID="Microsoft.RowCount"
+                      contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                      name="Row Count">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable to hold the row count."
+                          name="VariableName">User::SuccessRows_Prices</property>
+                      </properties>
+                      <inputs>
+                        <input
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\Row Count.Inputs[Row Count Input 1]"
+                          hasSideEffects="true"
+                          name="Row Count Input 1">
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Sequence Container\For Loop Container\Data Flow Task\Row Count.Outputs[Row Count Output 1]"
+                          name="Row Count Output 1"
+                          synchronousInputId="Package\Sequence Container\For Loop Container\Data Flow Task\Row Count.Inputs[Row Count Input 1]">
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\Sequence Container\For Loop Container\Data Flow Task.Paths[Derived Column Output]"
+                      endId="Package\Sequence Container\For Loop Container\Data Flow Task\Row Count.Inputs[Row Count Input 1]"
+                      name="Derived Column Output"
+                      startId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+                    <path
+                      refId="Package\Sequence Container\For Loop Container\Data Flow Task.Paths[Flat File Source Output]"
+                      endId="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                      name="Flat File Source Output"
+                      startId="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+                    <path
+                      refId="Package\Sequence Container\For Loop Container\Data Flow Task.Paths[Row Count Output 1]"
+                      endId="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      name="Row Count Output 1"
+                      startId="Package\Sequence Container\For Loop Container\Data Flow Task\Row Count.Outputs[Row Count Output 1]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
             <DTS:Executable
               DTS:refId="Package\Sequence Container\For Loop Container\Execute SQL Task"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
@@ -3839,7 +4540,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge Exchange_Dim"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3882,6 +4583,54 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
+              DTS:refId="Package\Sequence Container\For Loop Container\Merge to Prices_Fact"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{D39E98DC-25BA-41CF-8C11-11C1EC73D840}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Merge to Prices_Fact"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{CB35FB99-233F-4EEC-809F-508B1C6C64F0}"
+                  SQLTask:SqlStatementSource="/* ---------------- Task: Merge to Prices_Fact --------------------&#xA;   Parâmetros vindos do pacote SSIS&#xA;-----------------------------------------------------------------*/&#xA;DECLARE @RunId NVARCHAR(50) = ?;          -- mapear a  User::RunId&#xA;DECLARE @Now   DATETIME     = GETDATE();&#xA;&#xA;/* 1.  Fonte com TODAS as chaves resolvidas + checksum ------------*/&#xA;;WITH SourceRows AS (&#xA;    SELECT&#xA;        cd.id  AS crypto_id,&#xA;        ed.id  AS exchange_id,&#xA;        td.id  AS time_id,&#xA;&#xA;        /*  Casts garantem compatibilidade com Prices_Fact          */&#xA;        CAST(s.price_usd     AS DECIMAL(19,8)) AS price_usd,&#xA;        CAST(s.volume_usd    AS DECIMAL(19,2)) AS volume_usd,&#xA;        CAST(s.market_cap_usd AS DECIMAL(25,2)) AS market_cap_usd,&#xA;&#xA;        CONVERT(NVARCHAR(100), HASHBYTES('MD5',&#xA;            CONCAT(cd.id,'|',ed.id,'|',td.id,'|',&#xA;                   COALESCE(s.price_usd      ,''),'|',&#xA;                   COALESCE(s.volume_usd     ,''),'|',&#xA;                   COALESCE(s.market_cap_usd ,'')))&#xA;        ,2)                                 AS RowChk,&#xA;&#xA;        @RunId        AS DW_run_id,&#xA;        @Now          AS DW_updated_on,&#xA;        N'COINGECKO'  AS DW_source_system&#xA;    FROM dbo.Staging_Prices_Fact  s&#xA;    INNER JOIN dbo.Crypto_Dim   cd ON cd.symbol        = s.coin_code&#xA;    INNER JOIN dbo.Exchange_Dim ed ON ed.exchange_code = N'COINGECKO'&#xA;    INNER JOIN dbo.Time_Dim     td ON td.[date]        = s.event_date&#xA;)&#xA;&#xA;/* 2.  Merge (upsert) --------------------------------------------*/&#xA;MERGE dbo.Prices_Fact AS T&#xA;USING SourceRows     AS S&#xA;ON    T.crypto_id   = S.crypto_id&#xA;  AND T.exchange_id = S.exchange_id&#xA;  AND T.time_id     = S.time_id&#xA;&#xA;WHEN MATCHED &#xA;     AND T.DW_row_checksum &lt;&gt; S.RowChk     -- só actualiza se mudou&#xA;THEN UPDATE SET&#xA;        T.price_usd        = S.price_usd,&#xA;        T.volume_usd       = S.volume_usd,&#xA;        T.market_cap_usd   = S.market_cap_usd,&#xA;        T.DW_row_checksum  = S.RowChk,&#xA;        T.DW_run_id        = S.DW_run_id,&#xA;        T.DW_updated_on    = S.DW_updated_on,&#xA;        T.DW_source_system = S.DW_source_system&#xA;&#xA;WHEN NOT MATCHED BY TARGET&#xA;THEN INSERT ( crypto_id, exchange_id, time_id,&#xA;              price_usd, volume_usd, market_cap_usd,&#xA;              DW_row_checksum, DW_run_id, DW_updated_on, DW_source_system )&#xA;     VALUES ( S.crypto_id, S.exchange_id, S.time_id,&#xA;              S.price_usd, S.volume_usd, S.market_cap_usd,&#xA;              S.RowChk   , S.DW_run_id , S.DW_updated_on , S.DW_source_system );&#xA;&#xA;/* Opcional: número de linhas afectadas para debugging -------------*/&#xA;SELECT @@ROWCOUNT AS rows_tocados;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::RunId"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="130"
+                    SQLTask:ParameterSize="50" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Sequence Container\For Loop Container\Merge to Staging_Prices_Fact"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{678652B1-0B41-4F12-818C-E9DD6FF2369D}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Merge to Staging_Prices_Fact"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{CB35FB99-233F-4EEC-809F-508B1C6C64F0}"
+                  SQLTask:SqlStatementSource="/* ---------------- Task: Merge to Staging_Prices_Fact --------------- */&#xA;TRUNCATE TABLE dbo.Staging_Prices_Fact;&#xA;&#xA;INSERT INTO dbo.Staging_Prices_Fact&#xA;( coin_code&#xA;, event_date&#xA;, price_usd&#xA;, volume_usd&#xA;, market_cap_usd&#xA;, DW_row_checksum&#xA;, DW_run_id&#xA;, DW_updated_on&#xA;, DW_source_system )&#xA;SELECT&#xA;      crypto_name                                              -- coin_code&#xA;    , TRY_CONVERT(date, LEFT([date],10), 23)                   -- event_date&#xA;    , p.price_usd                                              -- preço já validado&#xA;    , p.volume_usd                                             -- volume (pode ser NULL)&#xA;    , p.mcap_usd                                               -- m-cap   (pode ser NULL)&#xA;    , CONVERT(nvarchar(100),&#xA;        HASHBYTES('MD5',&#xA;           CONCAT(crypto_name&#xA;                 ,LEFT([date],10)&#xA;                 ,ISNULL(p.price_txt ,'')&#xA;                 ,ISNULL(p.volume_txt,'')&#xA;                 ,ISNULL(p.mcap_txt ,''))), 2)                 -- checksum&#xA;    , ?                        -- 0 = User::RunId  (parameter mapping)&#xA;    , GETDATE()&#xA;    , N'COINGECKO'&#xA;FROM dbo.Staging_CoinPrices_Raw&#xA;CROSS APPLY (&#xA;        /* ---- limpeza e conversões ---- */&#xA;        SELECT&#xA;            NULLIF(LTRIM(RTRIM(close_txt )), '')                AS price_txt,&#xA;            NULLIF(LTRIM(RTRIM(volume_txt)), '')                AS volume_txt,&#xA;            NULLIF(LTRIM(RTRIM(mcap_txt )), '')                AS mcap_txt,&#xA;            TRY_CAST(REPLACE(close_txt , ',', '') AS numeric(18,8)) AS price_usd,&#xA;            TRY_CAST(REPLACE(volume_txt, ',', '') AS numeric(38,2)) AS volume_usd,&#xA;            TRY_CAST(REPLACE(mcap_txt , ',', '') AS numeric(38,2)) AS mcap_usd&#xA;) p&#xA;/* ------------- filtros de segurança ------------- */&#xA;WHERE p.price_usd IS NOT NULL&#xA;  AND TRY_CONVERT(date, LEFT([date],10), 23) IS NOT NULL;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::RunId"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="130"
+                    SQLTask:ParameterSize="50" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
               DTS:refId="Package\Sequence Container\For Loop Container\Truncate Staging_Crypto_Dim"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
@@ -3907,12 +4656,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               DTS:LocaleID="-1"
               DTS:ObjectName="Truncate Staging_Exchange_Dim"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{CB35FB99-233F-4EEC-809F-508B1C6C64F0}"
                   SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.Staging_Exchange_Dim;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Sequence Container\For Loop Container\Truncate Staging_Prices_Fact"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{42F60FD5-4C09-4BA4-BBE3-760E1B65D2BB}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Truncate Staging_Prices_Fact"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{CB35FB99-233F-4EEC-809F-508B1C6C64F0}"
+                  SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.Staging_Prices_Fact;&#xA;TRUNCATE TABLE dbo.Staging_CoinPrices_Raw;&#x9;&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -3930,6 +4696,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{CB35FB99-233F-4EEC-809F-508B1C6C64F0}"
                   SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.Staging_Time_Dim;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Sequence Container\For Loop Container\VerifyCoins"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{DDA44851-B46B-4DDB-975B-F658F88929BB}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="VerifyCoins"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{CB35FB99-233F-4EEC-809F-508B1C6C64F0}"
+                  SQLTask:SqlStatementSource="/* ---------------- Task ad-hoc: Load missing coins ---------------- */&#xA;DECLARE @RunId NVARCHAR(50) = ?;          -- ↔ mapeia ao User::RunId&#xA;DECLARE @Now   DATETIME      = GETDATE();&#xA;&#xA;;WITH Missing AS (&#xA;    SELECT DISTINCT s.coin_code&#xA;    FROM dbo.Staging_Prices_Fact s&#xA;    LEFT JOIN dbo.Crypto_Dim cd ON cd.symbol = s.coin_code&#xA;    WHERE cd.id IS NULL&#xA;)&#xA;INSERT INTO dbo.Crypto_Dim&#xA;        ( symbol&#xA;        , name&#xA;        , category&#xA;        , DW_row_checksum&#xA;        , DW_run_id&#xA;        , DW_updated_on&#xA;        , DW_source_system )&#xA;SELECT  m.coin_code                     AS symbol&#xA;      , m.coin_code                     AS name        -- provisório&#xA;      , NULL                            AS category&#xA;      , CONVERT(nvarchar(100), HASHBYTES('MD5', m.coin_code), 2)  AS DW_row_checksum&#xA;      , @RunId                          AS DW_run_id&#xA;      , @Now                            AS DW_updated_on&#xA;      , N'COINGECKO'                    AS DW_source_system&#xA;FROM    Missing AS m;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::RunId"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="130"
+                    SQLTask:ParameterSize="50" />
+                </SQLTask:SqlTaskData>
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -3950,6 +4740,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint"
               DTS:To="Package\Sequence Container\For Loop Container\Import Exchanges" />
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Sequence Container\For Loop Container.PrecedenceConstraints[Constraint2]"
+              DTS:CreationName=""
+              DTS:DTSID="{9E876B9C-E519-4D7E-8985-68669EBA88BC}"
+              DTS:From="Package\Sequence Container\For Loop Container\Truncate Staging_Prices_Fact"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Sequence Container\For Loop Container\Data Flow Task" />
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Sequence Container\For Loop Container.PrecedenceConstraints[Constraint 1]"
               DTS:CreationName=""
@@ -3990,1451 +4788,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 5"
               DTS:To="Package\Sequence Container\For Loop Container\Merge Time_Dim" />
-          </DTS:PrecedenceConstraints>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package\Sequence Container\Foreach Loop Container"
-          DTS:CreationName="STOCK:FOREACHLOOP"
-          DTS:Description="Foreach Loop Container"
-          DTS:DTSID="{CBD60C11-0A7E-4F55-AB00-38F64F798D10}"
-          DTS:ExecutableType="STOCK:FOREACHLOOP"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Foreach Loop Container">
-          <DTS:ForEachEnumerator
-            DTS:CreationName="Microsoft.ForEachADOEnumerator"
-            DTS:DTSID="{6E60A784-1B45-4781-B323-AE3E02BF45C9}"
-            DTS:ObjectName="{6E60A784-1B45-4781-B323-AE3E02BF45C9}">
-            <DTS:ObjectData>
-              <FEEADO
-                EnumType="EnumerateRowsInFirstTable"
-                VarName="User::CoinListADO" />
-            </DTS:ObjectData>
-          </DTS:ForEachEnumerator>
-          <DTS:Variables />
-          <DTS:Executables>
-            <DTS:Executable
-              DTS:refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task"
-              DTS:CreationName="Microsoft.Pipeline"
-              DTS:Description="Data Flow Task"
-              DTS:DTSID="{B71BE0DA-E03C-4759-99FE-087A78AE2521}"
-              DTS:ExecutableType="Microsoft.Pipeline"
-              DTS:LocaleID="-1"
-              DTS:ObjectName="Data Flow Task"
-              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-              <DTS:Variables />
-              <DTS:ObjectData>
-                <pipeline
-                  version="1">
-                  <components>
-                    <component
-                      refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination"
-                      componentClassID="Microsoft.OLEDBDestination"
-                      contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                      description="OLE DB Destination"
-                      name="OLE DB Destination"
-                      usesDispositions="true"
-                      version="4">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                          name="CommandTimeout">0</property>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the name of the database object used to open a rowset."
-                          name="OpenRowset">[dbo].[Staging_Prices_Fact]</property>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the variable that contains the name of the database object used to open a rowset."
-                          name="OpenRowsetVariable"></property>
-                        <property
-                          dataType="System.String"
-                          description="The SQL command to be executed."
-                          name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the column code page to use when code page information is unavailable from the data source."
-                          name="DefaultCodePage">1252</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Forces the use of the DefaultCodePage property value when describing character data."
-                          name="AlwaysUseDefaultCodePage">false</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the mode used to access the database."
-                          name="AccessMode"
-                          typeConverter="AccessMode">3</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                          name="FastLoadKeepIdentity">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                          name="FastLoadKeepNulls">false</property>
-                        <property
-                          dataType="System.String"
-                          description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                          name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                          name="FastLoadMaxInsertCommitSize">2147483647</property>
-                      </properties>
-                      <connections>
-                        <connection
-                          refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                          connectionManagerID="Package.ConnectionManagers[localhost.Datawarehouse_CG]"
-                          connectionManagerRefId="Package.ConnectionManagers[localhost.Datawarehouse_CG]"
-                          description="The OLE DB runtime connection used to access the database."
-                          name="OleDbConnection" />
-                      </connections>
-                      <inputs>
-                        <input
-                          refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                          errorOrTruncationOperation="Insert"
-                          errorRowDisposition="FailComponent"
-                          hasSideEffects="true"
-                          name="OLE DB Destination Input">
-                          <inputColumns>
-                            <inputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DW_updated_on]"
-                              cachedDataType="dbTimeStamp"
-                              cachedName="DW_updated_on"
-                              externalMetadataColumnId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DW_updated_on]"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[DW_updated_on]" />
-                            <inputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DW_run_id]"
-                              cachedDataType="wstr"
-                              cachedLength="50"
-                              cachedName="DW_run_id"
-                              externalMetadataColumnId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DW_run_id]"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[DW_run_id]" />
-                            <inputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[market_cap_usd]"
-                              cachedDataType="numeric"
-                              cachedName="market_cap_usd"
-                              cachedPrecision="38"
-                              cachedScale="2"
-                              externalMetadataColumnId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[market_cap_usd]"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[market_cap_usd]" />
-                            <inputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[volume_usd]"
-                              cachedDataType="numeric"
-                              cachedName="volume_usd"
-                              cachedPrecision="38"
-                              cachedScale="2"
-                              externalMetadataColumnId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[volume_usd]"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[volume_usd]" />
-                            <inputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[price_usd]"
-                              cachedDataType="numeric"
-                              cachedName="price_usd"
-                              cachedPrecision="18"
-                              cachedScale="8"
-                              externalMetadataColumnId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[price_usd]"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[price_usd]" />
-                            <inputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[event_date]"
-                              cachedDataType="date"
-                              cachedName="event_date"
-                              externalMetadataColumnId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[event_date]"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[event_date]" />
-                            <inputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[coin_code]"
-                              cachedDataType="wstr"
-                              cachedLength="50"
-                              cachedName="coin_code"
-                              externalMetadataColumnId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[coin_code]"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[coin_code]" />
-                          </inputColumns>
-                          <externalMetadataColumns
-                            isUsed="True">
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[coin_code]"
-                              dataType="wstr"
-                              length="50"
-                              name="coin_code" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[event_date]"
-                              dataType="dbDate"
-                              name="event_date" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[price_usd]"
-                              dataType="numeric"
-                              name="price_usd"
-                              precision="18"
-                              scale="8" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[volume_usd]"
-                              dataType="numeric"
-                              name="volume_usd"
-                              precision="38"
-                              scale="2" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[market_cap_usd]"
-                              dataType="numeric"
-                              name="market_cap_usd"
-                              precision="38"
-                              scale="2" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DW_run_id]"
-                              dataType="wstr"
-                              length="50"
-                              name="DW_run_id" />
-                            <externalMetadataColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DW_updated_on]"
-                              dataType="dbTimeStamp"
-                              name="DW_updated_on" />
-                          </externalMetadataColumns>
-                        </input>
-                      </inputs>
-                      <outputs>
-                        <output
-                          refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
-                          exclusionGroup="1"
-                          isErrorOut="true"
-                          name="OLE DB Destination Error Output"
-                          synchronousInputId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                              dataType="i4"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                              name="ErrorCode"
-                              specialFlags="1" />
-                            <outputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                              dataType="i4"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                              name="ErrorColumn"
-                              specialFlags="2" />
-                          </outputColumns>
-                          <externalMetadataColumns />
-                        </output>
-                      </outputs>
-                    </component>
-                    <component
-                      refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Row Count"
-                      componentClassID="Microsoft.RowCount"
-                      contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-                      description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
-                      name="Row Count">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the variable to hold the row count."
-                          name="VariableName">User::SuccessRows_Prices</property>
-                      </properties>
-                      <inputs>
-                        <input
-                          refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Row Count.Inputs[Row Count Input 1]"
-                          hasSideEffects="true"
-                          name="Row Count Input 1">
-                          <externalMetadataColumns />
-                        </input>
-                      </inputs>
-                      <outputs>
-                        <output
-                          refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Row Count.Outputs[Row Count Output 1]"
-                          name="Row Count Output 1"
-                          synchronousInputId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Row Count.Inputs[Row Count Input 1]">
-                          <externalMetadataColumns />
-                        </output>
-                      </outputs>
-                    </component>
-                    <component
-                      refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1"
-                      componentClassID="Microsoft.ManagedComponentHost"
-                      contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
-                      description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
-                      name="Script Component 1"
-                      version="13">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Stores the source code of the component"
-                          isArray="true"
-                          name="SourceCode"
-                          state="cdata">
-                          <arrayElements
-                            arrayElementCount="30">
-                            <arrayElement
-                              dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
-*  Microsoft SQL Server Integration Services component wrapper
-*  This module defines the base class for your component
-*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
-
-using System;
-using System.Data;
-using Microsoft.SqlServer.Dts.Pipeline;
-using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
-using Microsoft.SqlServer.Dts.Runtime.Wrapper;
-
-public class UserComponent: ScriptComponent
-{
-    public Connections Connections;
-    public Variables Variables;
-    public UserComponent()
-    {
-        Connections = new Connections(this);
-        Variables = new Variables(this);
-    }
-
-    public Output0Buffer Output0Buffer;
-
-    public virtual void FinishOutputs()
-    {
-    }
-
-    private void MarkOutputsFinished()
-    {
-
-        if (null != Output0Buffer)
-        {
-            Output0Buffer.SetEndOfRowset();
-            Output0Buffer = null;
-        }
-
-    }
-
-    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers, OutputNameMap OutputMap)
-    {
-       for(int Idx = 0; Idx < Outputs; Idx++)
-       {
-            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"Output 0"))
-            {
-                Output0Buffer = new Output0Buffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
-            }
-        }
-
-        CreateNewOutputRows();
-
-        FinishOutputs();
-        MarkOutputsFinished();
-
-    }
-
-    public virtual void CreateNewOutputRows()
-    {
-    }
-
-}
-
-public class Connections
-{
-    ScriptComponent ParentComponent;
-
-    public Connections(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-}
-
-public class Variables
-{
-    ScriptComponent ParentComponent;
-
-    public Variables(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-    public String CoinCode
-    {
-        get
-        {
-            return (String)(ParentComponent.ReadOnlyVariables["CoinCode"].GetValueWithContext(ScriptComponent.EvaluatorContext));
-        }
-    }
-
-    public String CoinId
-    {
-        get
-        {
-            return (String)(ParentComponent.ReadOnlyVariables["CoinId"].GetValueWithContext(ScriptComponent.EvaluatorContext));
-        }
-    }
-
-    public String RunId
-    {
-        get
-        {
-            return (String)(ParentComponent.ReadOnlyVariables["RunId"].GetValueWithContext(ScriptComponent.EvaluatorContext));
-        }
-    }
-
-}
-]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-</root>]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[main.cs]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[#region Namespaces
-using System;
-using System.IO;
-using System.Net;
-using Newtonsoft.Json.Linq;
-#endregion
-
-[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPoint]
-public class ScriptMain : UserComponent
-{
-    // ------------------------------------------------------------------
-    // Variáveis do pacote (preenchidas em PreExecute)
-    // ------------------------------------------------------------------
-    private string _coinIds;
-    private string _runId;
-
-    public override void PreExecute()
-    {
-        base.PreExecute();
-
-        _coinIds = Variables.CoinCode; ;   // "bitcoin,ethereum,dogecoin"
-        _runId = Variables.RunId;     // opcional – pode estar vazio
-    }
-
-    public override void CreateNewOutputRows()
-    {
-        // -------- 1. Chamada simples à API -----------------------------
-        string url = $"https://api.coingecko.com/api/v3/coins/markets" +
-                     $"?vs_currency=usd&ids={_coinIds}&order=market_cap_desc" +
-                     $"&per_page=250&page=1&sparkline=false";
-
-        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-
-        string json;
-        var req = (HttpWebRequest)WebRequest.Create(url);
-        req.Method = "GET";
-
-        using (var resp = (HttpWebResponse)req.GetResponse())
-        using (var sr = new StreamReader(resp.GetResponseStream()))
-            json = sr.ReadToEnd();
-
-        var rows = JArray.Parse(json);
-
-        // -------- 2. Uma linha por moeda -------------------------------
-        DateTime hojeUtc = DateTime.UtcNow.Date;
-        DateTime nowUtc = DateTime.UtcNow;
-
-        foreach (var r in rows)
-        {
-            Output0Buffer.AddRow();
-
-            Output0Buffer.coincode = (string)r["symbol"];          // "btc"
-            Output0Buffer.eventdate = hojeUtc;
-            Output0Buffer.priceusd = Convert.ToDecimal((double)r["current_price"]);
-            Output0Buffer.volumeusd = Convert.ToDecimal((double)r["total_volume"]);
-            Output0Buffer.marketcapusd = Convert.ToDecimal((double)r["market_cap"]);
-            Output0Buffer.DWrunid = _runId;
-            Output0Buffer.DWupdatedon = nowUtc;
-        }
-    }
-}
-]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
-*  Microsoft SQL Server Integration Services buffer wrappers
-*  This module defines classes for accessing data flow buffers
-*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
-
-
-
-using System;
-using System.Data;
-using Microsoft.SqlServer.Dts.Pipeline;
-using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
-
-public class Output0Buffer: ScriptBuffer
-
-{
-    public Output0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
-        : base(Buffer, BufferColumnIndexes, OutputMap)
-    {
-    }
-
-    public DateTime DWupdatedon
-    {
-        set
-        {
-            this[0] = value;
-        }
-    }
-    public bool DWupdatedon_IsNull
-    {
-        set
-        {
-            if (value)
-            {
-                SetNull(0);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
-    public String DWrunid
-    {
-        set
-        {
-            this[1] = value;
-        }
-    }
-    public bool DWrunid_IsNull
-    {
-        set
-        {
-            if (value)
-            {
-                SetNull(1);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
-    public Decimal marketcapusd
-    {
-        set
-        {
-            this[2] = value;
-        }
-    }
-    public bool marketcapusd_IsNull
-    {
-        set
-        {
-            if (value)
-            {
-                SetNull(2);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
-    public Decimal volumeusd
-    {
-        set
-        {
-            this[3] = value;
-        }
-    }
-    public bool volumeusd_IsNull
-    {
-        set
-        {
-            if (value)
-            {
-                SetNull(3);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
-    public Decimal priceusd
-    {
-        set
-        {
-            this[4] = value;
-        }
-    }
-    public bool priceusd_IsNull
-    {
-        set
-        {
-            if (value)
-            {
-                SetNull(4);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
-    public DateTime eventdate
-    {
-        set
-        {
-            this[5] = value;
-        }
-    }
-    public bool eventdate_IsNull
-    {
-        set
-        {
-            if (value)
-            {
-                SetNull(5);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
-    public String coincode
-    {
-        set
-        {
-            this[6] = value;
-        }
-    }
-    public bool coincode_IsNull
-    {
-        set
-        {
-            if (value)
-            {
-                SetNull(6);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
-    new public void AddRow()
-    {
-        base.AddRow();
-    }
-
-    new public void SetEndOfRowset()
-    {
-        base.SetEndOfRowset();
-    }
-
-    new public bool EndOfRowset()
-    {
-        return base.EndOfRowset();
-    }
-
-}
-]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_d8a5598ff3804ee1bf88f148fbd37492.Properties.Settings.get_Default():SC_d8a5598ff3804ee1bf88f148fbd37492.Properties.Sett" +
-    "ings")]
-
-namespace SC_d8a5598ff3804ee1bf88f148fbd37492.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}
-]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[SC_d8a5598ff3804ee1bf88f148fbd37492.csproj]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8391C023-B02B-44AC-B0CD-C3C05EF4FB64}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SC_d8a5598ff3804ee1bf88f148fbd37492</RootNamespace>
-    <AssemblyName>SC_d8a5598ff3804ee1bf88f148fbd37492</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\filip\OneDrive\Ambiente de Trabalho\net\newtonsoft.json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Compile Include="main.cs" />
-    <Compile Include="BufferWrapper.cs" />
-    <Compile Include="ComponentWrapper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <!-- Include the build rules for a C# project.-->
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
-        <Host Name="ScriptComponent" IconIndex="0" />
-        <ProjectClient>
-          <HostIdentifier>SSIS_SC160</HostIdentifier>
-        </ProjectClient>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-</Project>]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[Project]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>SC_d8a5598ff3804ee1bf88f148fbd37492</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>SC_d8a5598ff3804ee1bf88f148fbd37492</msb:DisplayName>
-    <msb:ProjectId>{0B1F880D-B523-4B8C-8988-3FCAC669125C}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="SC_d8a5598ff3804ee1bf88f148fbd37492.csproj" />
-    <msb:File Include="main.cs" />
-    <msb:File Include="BufferWrapper.cs" />
-    <msb:File Include="ComponentWrapper.cs" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("SC_d8a5598ff3804ee1bf88f148fbd37492")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SC_d8a5598ff3804ee1bf88f148fbd37492")]
-[assembly: AssemblyCopyright("Copyright @  2025")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.0.0")]
-]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_d8a5598ff3804ee1bf88f148fbd37492.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
-    "rceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_d8a5598ff3804ee1bf88f148fbd37492.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
-    "fo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_d8a5598ff3804ee1bf88f148fbd37492.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
-    "):Void")]
-
-namespace SC_d8a5598ff3804ee1bf88f148fbd37492.Properties {
-    
-    
-    /// <summary>
-    ///   A strongly-typed resource class, for looking up localized strings, etc.
-    /// </summary>
-    // This class was auto-generated by the StronglyTypedResourceBuilder
-    // class via a tool like ResGen or Visual Studio.
-    // To add or remove a member, edit your .ResX file then rerun ResGen
-    // with the /str option, or rebuild your VS project.
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class Resources {
-        
-        private static global::System.Resources.ResourceManager resourceMan;
-        
-        private static global::System.Globalization.CultureInfo resourceCulture;
-        
-        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
-        }
-        
-        /// <summary>
-        ///   Returns the cached ResourceManager instance used by this class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if ((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_d8a5598ff3804ee1bf88f148fbd37492.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
-                }
-                return resourceMan;
-            }
-        }
-        
-        /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for all
-        ///   resource lookups using this strongly typed resource class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
-                return resourceCulture;
-            }
-            set {
-                resourceCulture = value;
-            }
-        }
-    }
-}
-]]></arrayElement>
-                          </arrayElements>
-                        </property>
-                        <property
-                          dataType="System.String"
-                          description="Stores the binary representation of the component"
-                          isArray="true"
-                          name="BinaryCode"
-                          state="cdata">
-                          <arrayElements
-                            arrayElementCount="2">
-                            <arrayElement
-                              dataType="System.String"><![CDATA[SC_d8a5598ff3804ee1bf88f148fbd37492.dll]]></arrayElement>
-                            <arrayElement
-                              dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAMOZbWgAAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAOj0A
-AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAOg8AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
-AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAQB0AAAAgAAAAHgAAAAIA
-AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAgAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAJgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAc
-PQAAAAAAAEgAAAACAAUA0CQAAGAXAAABAAAAAAAAADA8AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAKYCKBAAAAoCAnsEAAAEbx0AAAZ9AQAABAICewQAAARvHwAA
-Bn0CAAAEKgAAGzADAG0BAAABAAARcgEAAHACewEAAARyigAAcCgRAAAKIAAMAAAoEgAACigTAAAK
-dCQAAAElcgABAHBvFAAACm8VAAAKdA8AAAENCW8WAAAKcxcAAAoTBBEEbxgAAAoK3hYRBCwHEQRv
-GQAACtwJLAYJbxkAAArcBigaAAAKKBsAAAoTBRIFKBwAAAoLKBsAAAoMbx0AAAoTBji/AAAAEQZv
-HgAAChMHAnsFAAAEbxMAAAYCewUAAAQRB3IIAQBwbx8AAAooIAAACm8RAAAGAnsFAAAEB28PAAAG
-AnsFAAAEEQdyFgEAcG8fAAAKKCEAAApsKCIAAApvDQAABgJ7BQAABBEHcjIBAHBvHwAACighAAAK
-bCgiAAAKbwsAAAYCewUAAAQRB3JMAQBwbx8AAAooIQAACmwoIgAACm8JAAAGAnsFAAAEAnsCAAAE
-bwcAAAYCewUAAAQIbwUAAAYRBm8jAAAKOjX////eDBEGLAcRBm8ZAAAK3CoAAAABKAAAAgBMAApW
-AAwAAAAAAgA/ACNiAAoAAAAAAgCOANJgAQwAAAAAHgIoFgAABioqAgMEBSgkAAAKKjoCFgOMDgAA
-ASglAAAKKloDLAgCFigmAAAKKnJiAQBwcycAAAp6JgIXAyglAAAKKloDLAgCFygmAAAKKnJiAQBw
-cycAAAp6OgIYA4wWAAABKCUAAAoqWgMsCAIYKCYAAAoqcmIBAHBzJwAACno6AhkDjBYAAAEoJQAA
-CipaAywIAhkoJgAACipyYgEAcHMnAAAKejoCGgOMFgAAASglAAAKKloDLAgCGigmAAAKKnJiAQBw
-cycAAAp6OgIbA4wOAAABKCUAAAoqWgMsCAIbKCYAAAoqcmIBAHBzJwAACnomAhwDKCUAAAoqWgMs
-CAIcKCYAAAoqcmIBAHBzJwAACnoeAigoAAAKKh4CKCkAAAoqHgIoKgAACip+AigrAAAKAgJzGwAA
-Bn0DAAAEAgJzHAAABn0EAAAEKgYqbgJ7BQAABCwSAnsFAAAEbxQAAAYCFH0FAAAEKgAAABMwBQBJ
-AAAAAgAAERYKKy4EBpQOBHL/AQBwKCwAAAozGQIFBpoCBAaUKC0AAAoOBHMEAAAGfQUAAAQGF1gK
-BgMyzgJvGgAABgJvFwAABgIoGAAABio6AiguAAAKAgN9BgAABCo6AiguAAAKAgN9BwAABCqWAnsH
-AAAEby8AAApyEQIAcG8wAAAKKDEAAApvMgAACnQgAAABKpYCewcAAARvLwAACnIjAgBwbzAAAAoo
-MQAACm8yAAAKdCAAAAEqlgJ7BwAABG8vAAAKcjECAHBvMAAACigxAAAKbzIAAAp0IAAAASoeAigu
-AAAKKq5+CAAABC0ecj0CAHDQBwAAAigzAAAKbzQAAApzNQAACoAIAAAEfggAAAQqGn4JAAAEKh4C
-gAkAAAQqGn4KAAAEKh4CKDYAAAoqLnMlAAAGgAoAAAQqAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMw
-MzE5AAAAAAUAbAAAADAIAAAjfgAAnAgAALQJAAAjU3RyaW5ncwAAAABQEgAAsAIAACNVUwAAFQAA
-EAAAACNHVUlEAAAAEBUAAFACAAAjQmxvYgAAAAAAAAACAAABVxWiCQkBAAAA+gEzABYAAAEAAAAz
-AAAACAAAAAoAAAAmAAAAGAAAADYAAAAQAAAAAgAAAAQAAAAUAAAAFQAAAAEAAAABAAAABgAAAAEA
-AAAAAFIEAQAAAAAABgBOAyUHBgDiAyUHBgCaAgkHDwCZBwAABgDHAq4FBgAxA64FBgASA64FBgDJ
-A64FBgBuA64FBgCHA64FBgDeAq4FBgD5AhEECgCiA48BBgCGAU8FDgAFAnIIBgBGBoEABgA6AJQA
-EgBiBTEGCgB7Bo8BFgBsBo8BCgD2BY8BBgA0BE8FCgDCCI8BBgBrCE8FBgB9AgkHBgCMBkUHBgDq
-BZkFDgBNAjwEDgCuAjwEDgDtAYQFBgBiAiUHBgArBE8FDgCcBnIIDgCwAXIIDgAHCXIIDgADCXII
-DgAJAnIIBgA2BYEABgBTBoEABgBWAU8FEgCeCTEGBgD7CE8FBgDYBhsIBgDABU8FGgARALAGGgAB
-ALAGXwBcCQAAGgAiALAGBgDAAU8FBgBiAU8FBgCpCa4FAAAAAGwAAAAAAAEAAQABABAAaQUAABAA
-AQABAAEAEABeBgAATQADAAQAAQAQAKQIAABdAAMAFgABABAALggAAGEABgAbAAEAEADjBwAAYQAH
-ABwAAAAQAEwHqAdhAAgAIAAAARAAEgioB3kACgAkAAEAHAcMAQEAxAAMAQYALggPAQYA4wcTAQYA
-XgYXAQEAsggbAQEAsggbAREAVgUfAREA3QEjAREALAEnAVAgAAAAAMYAAAQGAAEAfCAAAAAAxgBQ
-CAYAAQAgIgAAAACGGPIGBgABACgiAAAAAIYY8gafAAEAMyIAAAAAhgh0BSsBBABCIgAAAACGCPcE
-MQEFAFkiAAAAAIYI3wAQAAYAYyIAAAAAhgh6BDEBBwB6IgAAAACGCBsBNgEIAIkiAAAAAIYItgQx
-AQkAoCIAAAAAhggNATYBCgCvIgAAAACGCKEEMQELAMYiAAAAAIYIAAE2AQwA1SIAAAAAhgiNBDEB
-DQDsIgAAAACGCDgCKwEOAPsiAAAAAIYI4gQxAQ8AEiMAAAAAhghJARAAEAAcIwAAAACGCM4EMQER
-ADMjAAAAAIYAlwkGABIAOyMAAAAAhgB9CAYAEgBDIwAAAACGAIAImwASAEsjAAAAAIYY8gYGABIA
-ayMAAAAAxgFCCAYAEgBtIwAAAACBAMsABgASAIwjAAAAAMYAMwk8ARIAayMAAAAAxgFQCAYAFgDh
-IwAAAACGGPIGSAEWAPAjAAAAAIYY8gZIARcA/yMAAAAAhgg8AVkAGAAlJAAAAACGCK8AWQAYAEsk
-AAAAAIYIugBZABgAcSQAAAAAgxjyBgYAGAB5JAAAAACTCIgGTgEYAKUkAAAAAJMIxQFTARgArCQA
-AAAAkwjRAVgBGAC0JAAAAACWCJgIXgEZALskAAAAAIYY8gYGABkAwyQAAAAAkRj4BmMBGQAAAAEA
-gQYAAAIA7QcAAAMABAYAAAEACwQAAAEACwQAAAEACwQAAAEACwQAAAEACwQAAAEACwQAAAEACwQA
-AAEACwQAAAEACwQAAAEACwQAAAEACwQAAAEACwQAAAEACwQAAAEACwQAAAEASAgAAAIA/wYAAAMA
-OggAAAQABAYAAAEAyAgAAAEAyAgAAAEACwQJAPIGAQARAPIGBgAZAPIGCgApAPIGEAAxAPIGEAA5
-APIGEABBAPIGEABJAPIGEABRAPIGEABZAPIGEABhAPIGEABpAPIGBgDJAPIGBgDpAPIGFQD5APIG
-BgC5AAAEBgABAWQIMQAJARYFOAAZAUYCPwAZAfUAEAAZARUCRgApASsFTACBAPIGUgA5AesAWQBB
-ASECBgBJASkCXQBxAIwJZABxAC8CaQBJAeQGbgAMANIIfgCRAD0FgwCRAIwIiQCRAIwIjwBRATIE
-lQBZAT8JmwCZAPIGnwCZAEYFqQCZAA4FAQBhAfIGEACZAJcJBgCZAH0IBgCZAIAImwC5APIGBgC5
-AHUAswC5AAEIugDBAPIGBgC5ANcHwABpAT0FxgC5AHcJzQBxAUgJ0wCJAXQB2gCJAaUJ4wDRAPIG
-6QDxAPIGBgAuAAsAiAEuABMAkQEuABsAsAEuACMAuQEuACsA4gEuADMA4gEuADsA4gEuAEMAuQEu
-AEsA6AEuAFMA4gEuAFsA/wFDAGMASQLjAGsASQJBAXsASQJJAnMAsAFpAnMAsAEbAK8AAwABAAYA
-DwAHABIACAAUAAAAeAVnAQAA+wRsAQAA4wBwAQAAfgRsAQAAHwF0AQAAugRsAQAAEQF0AQAApQRs
-AQAABAF0AQAAkQRsAQAAPAJnAQAA5gRsAQAATQFwAQAA0gRsAQAAQAFwAQAAswBwAQAAvgBwAQAA
-jAZ5AQAA5QF+AQAAnAiDAQEABQADAAEABgAFAAEABwAHAAEACAAJAAEACQALAAEACgANAAEACwAP
-AAEADAARAAEADQATAAEADgAVAAEADwAXAAEAEAAZAAEAEQAbAAEAEgAdAAIAHQAfAAIAHgAhAAIA
-HwAjAAIAIQAlAAIAIgAnAAEAIwAnAAIAJAApAHcABIAAAAEAAAAAAAAAAAAAAAAASAAAAAQAAAAA
-AAAAAAAAAPEAiwAAAAAAEAAAAAAAAAAAAAAA+gDeCAAAAAAEAAAAAAAAAAAAAADxAE8FAAAAAA0A
-AAAAAAAAAAAAAAMB2gUAAAAAEAAAAAAAAAAAAAAA+gASCQAAAAAQAAAAAAAAAAAAAAD6AA4GAAAA
-AAAAAAABAAAAVgcAAAAAAElEVFNWYXJpYWJsZTEwMABJRFRTVmFyaWFibGVzMTAwAElEVFNFdmFs
-dWF0b3JDb250ZXh0MTAwAElFbnVtZXJhdG9yYDEAU0NfZDhhNTU5OGZmMzgwNGVlMWJmODhmMTQ4
-ZmJkMzc0OTIAPE1vZHVsZT4AR2V0T3V0cHV0SUQAU3lzdGVtLklPAG1zY29ybGliAFN5c3RlbS5D
-b2xsZWN0aW9ucy5HZW5lcmljAGdldF9Db2luSWQAZ2V0X1J1bklkAF9ydW5JZABNYXJrT3V0cHV0
-c0ZpbmlzaGVkAHNldF9EV3J1bmlkAFJlYWRUb0VuZABzZXRfTWV0aG9kAHNldF9wcmljZXVzZABz
-ZXRfdm9sdW1ldXNkAHNldF9tYXJrZXRjYXB1c2QAZGVmYXVsdEluc3RhbmNlAGdldF9Db2luQ29k
-ZQBzZXRfY29pbmNvZGUASURpc3Bvc2FibGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21I
-YW5kbGUARGF0ZVRpbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAU2VjdXJpdHlQ
-cm90b2NvbFR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAEFwcGxp
-Y2F0aW9uU2V0dGluZ3NCYXNlAEh0dHBXZWJSZXNwb25zZQBHZXRSZXNwb25zZQBEaXNwb3NlAFBh
-cnNlAGdldF9EYXRlAHNldF9ldmVudGRhdGUAQ3JlYXRlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENv
-bXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVi
-dWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0
-dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1
-dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRy
-aWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRy
-aWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5
-UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmls
-aXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBT
-dHJpbmcAVG9EZWNpbWFsAFN5c3RlbS5Db21wb25lbnRNb2RlbABTQ19kOGE1NTk4ZmYzODA0ZWUx
-YmY4OGYxNDhmYmQzNzQ5Mi5kbGwAc2V0X0RXcnVuaWRfSXNOdWxsAHNldF9wcmljZXVzZF9Jc051
-bGwAc2V0X3ZvbHVtZXVzZF9Jc051bGwAc2V0X21hcmtldGNhcHVzZF9Jc051bGwAc2V0X2NvaW5j
-b2RlX0lzTnVsbABzZXRfZXZlbnRkYXRlX0lzTnVsbABzZXRfRFd1cGRhdGVkb25fSXNOdWxsAFNl
-dE51bGwAc2V0X1NlY3VyaXR5UHJvdG9jb2wAR2V0UmVzcG9uc2VTdHJlYW0AZ2V0X0l0ZW0Ac2V0
-X0l0ZW0AU3lzdGVtAHJlc291cmNlTWFuAEpUb2tlbgBTY3JpcHRNYWluAHNldF9EV3VwZGF0ZWRv
-bgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVj
-dGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAE5ld3RvbnNvZnQuSnNvbgBDdWx0dXJlSW5m
-bwBPdXRwdXROYW1lTWFwAE91dHB1dE1hcABNaWNyb3NvZnQuU3FsU2VydmVyLkRUU1J1bnRpbWVX
-cmFwAE5ld3RvbnNvZnQuSnNvbi5MaW5xAFN0cmVhbVJlYWRlcgBUZXh0UmVhZGVyAE91dHB1dDBC
-dWZmZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIAU2Vy
-dmljZVBvaW50TWFuYWdlcgBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5SdW50aW1lLldyYXBwZXIA
-SUVudW1lcmF0b3IAR2V0RW51bWVyYXRvcgAuY3RvcgAuY2N0b3IAT3V0cHV0SURzAFN5c3RlbS5E
-aWFnbm9zdGljcwBfY29pbklkcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3Rl
-bS5SZXNvdXJjZXMAU0NfZDhhNTU5OGZmMzgwNGVlMWJmODhmMTQ4ZmJkMzc0OTIuUHJvcGVydGll
-cy5SZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDX2Q4YTU1OThmZjM4MDRlZTFi
-Zjg4ZjE0OGZiZDM3NDkyLlByb3BlcnRpZXMAZ2V0X1JlYWRPbmx5VmFyaWFibGVzAEJ1ZmZlckNv
-bHVtbkluZGV4ZXMAR2V0Q29sdW1uSW5kZXhlcwBTZXR0aW5ncwBTeXN0ZW0uQ29sbGVjdGlvbnMA
-Q29ubmVjdGlvbnMAQnVmZmVycwBGaW5pc2hPdXRwdXRzAENyZWF0ZU5ld091dHB1dFJvd3MAQ29u
-Y2F0AE9iamVjdABTeXN0ZW0uTmV0AFNldEVuZE9mUm93c2V0AG9wX0V4cGxpY2l0AGdldF9EZWZh
-dWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENvbXBvbmVudABnZXRfQ3Vy
-cmVudABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AENvbnZlcnQASHR0cFdlYlJlcXVlc3QA
-TWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QAUHJpbWVPdXRwdXQATW92ZU5leHQAR2V0
-VmFsdWVXaXRoQ29udGV4dABTY3JpcHRDb21wb25lbnRFdmFsQ29udGV4dABnZXRfRXZhbHVhdG9y
-Q29udGV4dABnZXRfVXRjTm93AEFkZFJvdwBKQXJyYXkAZ2V0X0Fzc2VtYmx5AAAAAICHaAB0AHQA
-cABzADoALwAvAGEAcABpAC4AYwBvAGkAbgBnAGUAYwBrAG8ALgBjAG8AbQAvAGEAcABpAC8AdgAz
-AC8AYwBvAGkAbgBzAC8AbQBhAHIAawBlAHQAcwA/AHYAcwBfAGMAdQByAHIAZQBuAGMAeQA9AHUA
-cwBkACYAaQBkAHMAPQAAdSYAbwByAGQAZQByAD0AbQBhAHIAawBlAHQAXwBjAGEAcABfAGQAZQBz
-AGMAJgBwAGUAcgBfAHAAYQBnAGUAPQAyADUAMAAmAHAAYQBnAGUAPQAxACYAcwBwAGEAcgBrAGwA
-aQBuAGUAPQBmAGEAbABzAGUAAAdHAEUAVAAADXMAeQBtAGIAbwBsAAAbYwB1AHIAcgBlAG4AdABf
-AHAAcgBpAGMAZQAAGXQAbwB0AGEAbABfAHYAbwBsAHUAbQBlAAAVbQBhAHIAawBlAHQAXwBjAGEA
-cAAAgJtJAHMATgB1AGwAbAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAA
-cwBlAHQAIAB0AG8AIABGAGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAg
-AHQAbwAgAHQAaABlACAAYwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBkAC4AABFPAHUAdABwAHUA
-dAAgADAAABFDAG8AaQBuAEMAbwBkAGUAAA1DAG8AaQBuAEkAZAAAC1IAdQBuAEkAZAAAcVMAQwBf
-AGQAOABhADUANQA5ADgAZgBmADMAOAAwADQAZQBlADEAYgBmADgAOABmADEANAA4AGYAYgBkADMA
-NwA0ADkAMgAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAP6jjmXd
-0HNBiOZC6gPVY8MABCABAQgDIAABBSABARERBCABAQ4FIAEBEXEVBwgOETkRORI9EkERORUSRQES
-SRJJBgADDg4ODgYAAQERgIkGAAESgI0OBSAAEoCVBSAAEoCZBiABARKAmQMgAA4GAAESgKUOBAAA
-ETkEIAAROQggABUSRQESSQYVEkUBEkkEIAATAAUgARJJHAUAAQ4SSQUAAQ0SSQUAARFZDQMgAAIJ
-IAMBElEdCBJVBSACAQgcAwcBCAYAAggSVQ4FIAEdCAgFIAASgLUGIAESgLkcBQAAEoC9BiABHBKA
-wQgAARKAxRGAyQUgABKAzQcgAgEOEoDNCLd6XFYZNOCJCImEXc2AgMyRCDCtT+aypq7tAgYOAwYS
-FAMGEhgDBhIMAwYSXQMGEmkDBhJtAwYSIAUgAQEROQQgAQECBSABARFZCyAEAQgdCB0SURJVBSAB
-ARJdBAAAEmkEAAASbQUAAQESbQQAABIgAwAAAQQoABE5AygAAgMoAA4EKAARWQQIABJpBAgAEm0E
-CAASIAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAj
-U0NfZDhhNTU5OGZmMzgwNGVlMWJmODhmMTQ4ZmJkMzc0OTIAAAUBAAAAABYBABFDb3B5cmlnaHQg
-QCAgMjAyNQAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdvcmtEaXNw
-bGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcEAQAAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0u
-UmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291
-cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAABA9AAAAAAAAAAAA
-ACo9AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcPQAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1z
-Y29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA
-EAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABY
-QAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E
-7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBW
-AGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAA
-AACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAAMAA0
-AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5AE4A
-YQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBD
-AF8AZAA4AGEANQA1ADkAOABmAGYAMwA4ADAANABlAGUAMQBiAGYAOAA4AGYAMQA0ADgAZgBiAGQA
-MwA3ADQAOQAyAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAALgAw
-AAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwBkADgAYQA1ADUAOQA4AGYA
-ZgAzADgAMAA0AGUAZQAxAGIAZgA4ADgAZgAxADQAOABmAGIAZAAzADcANAA5ADIALgBkAGwAbAAA
-AEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAA
-QAAgACAAMgAwADIANQAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAAAAAA
-AAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfAGQAOABhADUA
-NQA5ADgAZgBmADMAOAAwADQAZQBlADEAYgBmADgAOABmADEANAA4AGYAYgBkADMANwA0ADkAMgAu
-AGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwBkADgAYQA1ADUA
-OQA4AGYAZgAzADgAMAA0AGUAZQAxAGIAZgA4ADgAZgAxADQAOABmAGIAZAAzADcANAA5ADIAAAA0
-AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAIAAEA
-QQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAADw9AAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
-                          </arrayElements>
-                        </property>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
-                          name="VSTAProjectName"
-                          typeConverter="NOTBROWSABLE">SC_d8a5598ff3804ee1bf88f148fbd37492</property>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the programming language used by the script."
-                          name="ScriptLanguage"
-                          typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
-                        <property
-                          dataType="System.String"
-                          description="Specifies a comma-separated list of read-only variables."
-                          name="ReadOnlyVariables"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg">User::CoinCode,User::CoinId,User::RunId</property>
-                        <property
-                          dataType="System.String"
-                          description="Specifies a comma-separated list of read/write variables."
-                          name="ReadWriteVariables"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
-                        <property
-                          dataType="System.String"
-                          description="List of breakpoints present on the script."
-                          isArray="true"
-                          name="BreakpointCollection"
-                          typeConverter="NOTBROWSABLE">
-                          <arrayElements
-                            arrayElementCount="0" />
-                        </property>
-                        <property
-                          dataType="System.String"
-                          description="Checksum to match component metedata against compiled codes."
-                          name="MetadataChecksum140"
-                          typeConverter="NOTBROWSABLE">0A</property>
-                        <property
-                          dataType="System.String"
-                          name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
-                      </properties>
-                      <outputs>
-                        <output
-                          refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0]"
-                          hasSideEffects="true"
-                          name="Output 0">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[DW_updated_on]"
-                              dataType="dbTimeStamp"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[DW_updated_on]"
-                              name="DW_updated_on" />
-                            <outputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[DW_run_id]"
-                              dataType="wstr"
-                              length="50"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[DW_run_id]"
-                              name="DW_run_id" />
-                            <outputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[market_cap_usd]"
-                              dataType="numeric"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[market_cap_usd]"
-                              name="market_cap_usd"
-                              precision="38"
-                              scale="2" />
-                            <outputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[volume_usd]"
-                              dataType="numeric"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[volume_usd]"
-                              name="volume_usd"
-                              precision="38"
-                              scale="2" />
-                            <outputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[price_usd]"
-                              dataType="numeric"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[price_usd]"
-                              name="price_usd"
-                              precision="18"
-                              scale="8" />
-                            <outputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[event_date]"
-                              dataType="date"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[event_date]"
-                              name="event_date" />
-                            <outputColumn
-                              refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[coin_code]"
-                              dataType="wstr"
-                              length="50"
-                              lineageId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0].Columns[coin_code]"
-                              name="coin_code" />
-                          </outputColumns>
-                          <externalMetadataColumns />
-                        </output>
-                      </outputs>
-                    </component>
-                  </components>
-                  <paths>
-                    <path
-                      refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task.Paths[Output 0]"
-                      endId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Row Count.Inputs[Row Count Input 1]"
-                      name="Output 0"
-                      startId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1.Outputs[Output 0]" />
-                    <path
-                      refId="Package\Sequence Container\Foreach Loop Container\Data Flow Task.Paths[Row Count Output 1]"
-                      endId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                      name="Row Count Output 1"
-                      startId="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Row Count.Outputs[Row Count Output 1]" />
-                  </paths>
-                </pipeline>
-              </DTS:ObjectData>
-            </DTS:Executable>
-            <DTS:Executable
-              DTS:refId="Package\Sequence Container\Foreach Loop Container\Merge to Prices_Fact"
-              DTS:CreationName="Microsoft.ExecuteSQLTask"
-              DTS:Description="Execute SQL Task"
-              DTS:DTSID="{678652B1-0B41-4F12-818C-E9DD6FF2369D}"
-              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-              DTS:LocaleID="-1"
-              DTS:ObjectName="Merge to Prices_Fact"
-              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
-              <DTS:Variables />
-              <DTS:ObjectData>
-                <SQLTask:SqlTaskData
-                  SQLTask:Connection="{CB35FB99-233F-4EEC-809F-508B1C6C64F0}"
-                  SQLTask:SqlStatementSource="MERGE dbo.Prices_Fact   AS T&#xA;USING (&#xA;        /* —­­- Resolve as chaves surrogate —­­- */&#xA;        SELECT  cd.id          AS crypto_id,&#xA;                td.id          AS time_id,&#xA;                s.price_usd,&#xA;                s.volume_usd,&#xA;                s.market_cap_usd,&#xA;                /* hash para detectar updates */&#xA;                HASHBYTES(&#xA;                    'MD5',&#xA;                    CONCAT_WS('|',&#xA;                              cd.id,&#xA;                              td.id,&#xA;                              s.price_usd,&#xA;                              s.volume_usd,&#xA;                              s.market_cap_usd)&#xA;                )              AS DW_row_checksum,&#xA;                s.DW_run_id,&#xA;                s.DW_updated_on&#xA;        FROM    dbo.Staging_Prices_Fact AS s&#xA;        JOIN    dbo.Crypto_Dim  cd&#xA;                  ON cd.symbol = s.coin_code    -- nvarchar → varchar OK&#xA;        JOIN    dbo.Time_Dim    td&#xA;                  ON td.[date]  = s.event_date&#xA;      ) AS S&#xA;      ON  T.crypto_id = S.crypto_id&#xA;      AND T.time_id   = S.time_id&#xA;&#xA;/* —­­- LINHA JÁ EXISTE MAS MUDOU ALGUM VALOR —­­- */&#xA;WHEN MATCHED&#xA;     AND T.DW_row_checksum &lt;&gt; S.DW_row_checksum&#xA;THEN UPDATE SET&#xA;        price_usd       = S.price_usd,&#xA;        volume_usd      = S.volume_usd,&#xA;        market_cap_usd  = S.market_cap_usd,&#xA;        DW_row_checksum = S.DW_row_checksum,&#xA;        DW_run_id       = S.DW_run_id,&#xA;        DW_updated_on   = S.DW_updated_on&#xA;&#xA;/* —­­- LINHA NOVA —­­- */&#xA;WHEN NOT MATCHED&#xA;THEN INSERT (crypto_id, time_id,&#xA;             price_usd, volume_usd, market_cap_usd,&#xA;             DW_row_checksum, DW_run_id, DW_updated_on)&#xA;     VALUES (S.crypto_id, S.time_id,&#xA;             S.price_usd, S.volume_usd, S.market_cap_usd,&#xA;             S.DW_row_checksum, S.DW_run_id, S.DW_updated_on);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-              </DTS:ObjectData>
-            </DTS:Executable>
-            <DTS:Executable
-              DTS:refId="Package\Sequence Container\Foreach Loop Container\Truncate Staging_Prices_Fact"
-              DTS:CreationName="Microsoft.ExecuteSQLTask"
-              DTS:Description="Execute SQL Task"
-              DTS:DTSID="{42F60FD5-4C09-4BA4-BBE3-760E1B65D2BB}"
-              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-              DTS:LocaleID="-1"
-              DTS:ObjectName="Truncate Staging_Prices_Fact"
-              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
-              <DTS:Variables />
-              <DTS:ObjectData>
-                <SQLTask:SqlTaskData
-                  SQLTask:Connection="{CB35FB99-233F-4EEC-809F-508B1C6C64F0}"
-                  SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.Staging_Prices_Fact;&#xA;GO&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-              </DTS:ObjectData>
-            </DTS:Executable>
-          </DTS:Executables>
-          <DTS:PrecedenceConstraints>
             <DTS:PrecedenceConstraint
-              DTS:refId="Package\Sequence Container\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+              DTS:refId="Package\Sequence Container\For Loop Container.PrecedenceConstraints[Constraint 6]"
               DTS:CreationName=""
-              DTS:DTSID="{9E876B9C-E519-4D7E-8985-68669EBA88BC}"
-              DTS:From="Package\Sequence Container\Foreach Loop Container\Truncate Staging_Prices_Fact"
+              DTS:DTSID="{8C1A4B47-C7C2-4C80-9261-2AEB68ABFB92}"
+              DTS:From="Package\Sequence Container\For Loop Container\Data Flow Task"
               DTS:LogicalAnd="True"
-              DTS:ObjectName="Constraint"
-              DTS:To="Package\Sequence Container\Foreach Loop Container\Data Flow Task" />
+              DTS:ObjectName="Constraint 6"
+              DTS:To="Package\Sequence Container\For Loop Container\Merge to Staging_Prices_Fact" />
             <DTS:PrecedenceConstraint
-              DTS:refId="Package\Sequence Container\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
+              DTS:refId="Package\Sequence Container\For Loop Container.PrecedenceConstraints[Constraint 7]"
               DTS:CreationName=""
-              DTS:DTSID="{F93ADA21-5DD9-489B-80CD-7158773FF475}"
-              DTS:From="Package\Sequence Container\Foreach Loop Container\Data Flow Task"
+              DTS:DTSID="{873D4647-0816-48BC-8C3A-C52D707EA939}"
+              DTS:From="Package\Sequence Container\For Loop Container\Merge to Staging_Prices_Fact"
               DTS:LogicalAnd="True"
-              DTS:ObjectName="Constraint 1"
-              DTS:To="Package\Sequence Container\Foreach Loop Container\Merge to Prices_Fact" />
-          </DTS:PrecedenceConstraints>
-          <DTS:ForEachVariableMappings>
-            <DTS:ForEachVariableMapping
+              DTS:ObjectName="Constraint 7"
+              DTS:To="Package\Sequence Container\For Loop Container\VerifyCoins" />
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Sequence Container\For Loop Container.PrecedenceConstraints[Constraint 8]"
               DTS:CreationName=""
-              DTS:DTSID="{827F1159-7E6A-4D08-8A17-A704B3DC433B}"
-              DTS:ObjectName="{827F1159-7E6A-4D08-8A17-A704B3DC433B}"
-              DTS:ValueIndex="0"
-              DTS:VariableName="User::CoinCode" />
-          </DTS:ForEachVariableMappings>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package\Sequence Container\Load coinListADO"
-          DTS:CreationName="Microsoft.ExecuteSQLTask"
-          DTS:Description="Execute SQL Task"
-          DTS:DTSID="{089EA8F7-9C02-49C6-A07F-99141DFC934C}"
-          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Load coinListADO"
-          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <SQLTask:SqlTaskData
-              SQLTask:Connection="{CB35FB99-233F-4EEC-809F-508B1C6C64F0}"
-              SQLTask:SqlStatementSource="SELECT symbol        -- era id, agora é symbol&#xA;FROM   dbo.Crypto_Dim&#xA;ORDER  BY id;        -- (ou qualquer ordem que queiras"
-              SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-              <SQLTask:ResultBinding
-                SQLTask:ResultName="0"
-                SQLTask:DtsVariableName="User::CoinListADO" />
-            </SQLTask:SqlTaskData>
-          </DTS:ObjectData>
+              DTS:DTSID="{391722AE-F6DB-4785-85C3-60200554EDF2}"
+              DTS:From="Package\Sequence Container\For Loop Container\VerifyCoins"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint 8"
+              DTS:To="Package\Sequence Container\For Loop Container\Merge to Prices_Fact" />
+          </DTS:PrecedenceConstraints>
         </DTS:Executable>
       </DTS:Executables>
-      <DTS:PrecedenceConstraints>
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
-          DTS:CreationName=""
-          DTS:DTSID="{D396DCF3-88F1-4E34-AB76-8384D74951E1}"
-          DTS:From="Package\Sequence Container\For Loop Container"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint"
-          DTS:To="Package\Sequence Container\Load coinListADO" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
-          DTS:CreationName=""
-          DTS:DTSID="{16A78153-B0D3-4140-B407-6DB964A80B6C}"
-          DTS:From="Package\Sequence Container\Load coinListADO"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 1"
-          DTS:To="Package\Sequence Container\Foreach Loop Container" />
-      </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
@@ -5488,9 +4868,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Id="Package\Generate RunId"
           TopLeft="289.166650867297,36.3999997468789" />
         <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Sequence Container\For Loop Container\Data Flow Task"
+          TopLeft="608.31425234633,105.949998485793" />
+        <NodeLayout
           Size="164.8,41.6"
           Id="Package\Sequence Container\For Loop Container\Execute SQL Task"
           TopLeft="356.01664424249,167.699998146792" />
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Sequence Container\For Loop Container\Merge to Prices_Fact"
+          TopLeft="596.933291314426,345.021425733502" />
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\Sequence Container\For Loop Container\Generate Calendar"
@@ -5516,6 +4904,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Id="Package\Sequence Container\For Loop Container\Merge to Crypto_Dim"
           TopLeft="13.1809385914657,193.390473357931" />
         <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\Sequence Container\For Loop Container\Merge to Staging_Prices_Fact"
+          TopLeft="597.838054324948,187.22380789445" />
+        <NodeLayout
           Size="164.8,41.6"
           Id="Package\Sequence Container\For Loop Container\Truncate Staging_Crypto_Dim"
           TopLeft="11.9904624660341,20.8190449931318" />
@@ -5523,6 +4915,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Size="143.2,41.6"
           Id="Package\Sequence Container\For Loop Container\Truncate Staging_Exchange_Dim"
           TopLeft="191.22737806602,22.8952368210234" />
+        <NodeLayout
+          Size="218.4,41.6"
+          Id="Package\Sequence Container\For Loop Container\Truncate Staging_Prices_Fact"
+          TopLeft="574.009484067182,35.5047608543956" />
         <NodeLayout
           Size="186.4,41.6"
           Id="Package\Sequence Container\For Loop Container\Truncate Staging_Time_Dim"
@@ -5563,6 +4959,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,37.1023803529401" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\For Loop Container.PrecedenceConstraints[Constraint2]"
+          TopLeft="683.361868206756,77.1047608543956">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.8452376313975"
+              Start="0,0"
+              End="0,21.3452376313975">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.3452376313975" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5681,153 +5099,88 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\For Loop Container.PrecedenceConstraints[Constraint 6]"
+          TopLeft="684.876153335639,147.549998485793">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.673809408657"
+              Start="0,0"
+              End="0,32.173809408657">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.173809408657" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Sequence Container\For Loop Container\VerifyCoins"
+          TopLeft="595.766629558638,269.533331675993" />
+        <EdgeLayout
+          Id="Package\Sequence Container\For Loop Container.PrecedenceConstraints[Constraint 7]"
+          TopLeft="684.402341941793,228.82380789445">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.7095237815429"
+              Start="0,0"
+              End="0,33.2095237815429">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.2095237815429" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\For Loop Container.PrecedenceConstraints[Constraint 8]"
+          TopLeft="683.149960436532,311.133331675993">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.8880940575094"
+              Start="0,0"
+              End="0,26.3880940575094">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.3880940575094" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="600.8,343.2"
-          Size="600.8,386.4"
+          PanelSize="865.6,440.8"
+          Size="865.6,484"
           Id="Package\Sequence Container\For Loop Container"
           TopLeft="41.4023666262751,23.6261885444205" />
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Sequence Container\Foreach Loop Container\Data Flow Task"
-          TopLeft="58.6666247778489,114.883331517792" />
-        <NodeLayout
-          Size="176.8,41.6"
-          Id="Package\Sequence Container\Foreach Loop Container\Merge to Prices_Fact"
-          TopLeft="52.6547122268355,208.38333131762" />
-        <NodeLayout
-          Size="218.4,41.6"
-          Id="Package\Sequence Container\Foreach Loop Container\Truncate Staging_Prices_Fact"
-          TopLeft="25.5523326241327,22.1523797556522" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Foreach Loop Container.PrecedenceConstraints[Constraint]"
-          TopLeft="134.309478700991,63.7523797556522">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,51.1309517621403"
-              Start="0,0"
-              End="0,43.6309517621403">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.6309517621403" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="137.460668502342,156.483331517792">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,51.8999997998277"
-              Start="0,0"
-              End="0,44.3999997998277">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,44.3999997998277" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="294.4,322.4"
-          Size="294.4,365.6"
-          Id="Package\Sequence Container\Foreach Loop Container"
-          TopLeft="695.348761707789,26.4714278675971" />
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Sequence Container\Load coinListADO"
-          TopLeft="540.830913077663,467.899996067584" />
-        <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
-          TopLeft="341.802366626275,410.026188544421">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="254.495213118055,57.8738075231632"
-              Start="0,0"
-              End="254.495213118055,50.3738075231632">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.3855110064453" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.3855110064453"
-                    Point2="0,34.3855110064453"
-                    Point3="4,34.3855110064453" />
-                  <mssgle:LineSegment
-                    End="250.495213118055,34.3855110064453" />
-                  <mssgle:CubicBezierSegment
-                    Point1="250.495213118055,34.3855110064453"
-                    Point2="254.495213118055,34.3855110064453"
-                    Point3="254.495213118055,38.3855110064453" />
-                  <mssgle:LineSegment
-                    End="254.495213118055,50.3738075231632" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="647.764246410997,467.899996067584">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="194.784515296793,-75.8285681999866"
-              Start="0,0"
-              End="194.784515296793,-68.3285681999866">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-26.7753018255556" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-26.7753018255556"
-                    Point2="0,-30.7753018255556"
-                    Point3="4,-30.7753018255556" />
-                  <mssgle:LineSegment
-                    End="190.784515296793,-30.7753018255556" />
-                  <mssgle:CubicBezierSegment
-                    Point1="190.784515296793,-30.7753018255556"
-                    Point2="194.784515296793,-30.7753018255556"
-                    Point3="194.784515296793,-34.7753018255556" />
-                  <mssgle:LineSegment
-                    End="194.784515296793,-68.3285681999866" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="994.4,574.4"
-          Size="994.4,617.6"
+          PanelSize="1046.4,574.4"
+          Size="1046.4,617.6"
           Id="Package\Sequence Container"
           TopLeft="220.714273654989,238.085712630096" />
         <EdgeLayout
@@ -5836,9 +5189,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="356.347622241316,79.485713443699"
+              EndConnector="382.347622241316,79.485713443699"
               Start="0,0"
-              End="356.347622241316,71.985713443699">
+              End="382.347622241316,71.985713443699">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -5849,13 +5202,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                     Point2="0,39.7428567218495"
                     Point3="4,39.7428567218495" />
                   <mssgle:LineSegment
-                    End="352.347622241316,39.7428567218495" />
+                    End="378.347622241316,39.7428567218495" />
                   <mssgle:CubicBezierSegment
-                    Point1="352.347622241316,39.7428567218495"
-                    Point2="356.347622241316,39.7428567218495"
-                    Point3="356.347622241316,43.7428567218495" />
+                    Point1="378.347622241316,39.7428567218495"
+                    Point2="382.347622241316,39.7428567218495"
+                    Point3="382.347622241316,43.7428567218495" />
                   <mssgle:LineSegment
-                    End="356.347622241316,71.985713443699" />
+                    End="382.347622241316,71.985713443699" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5888,30 +5241,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="717.914273654989,855.685712630096">
+          TopLeft="743.914273654989,855.685712630096">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-387.104763439817,42.5166640551727"
+              EndConnector="-413.104763439817,42.5166640551729"
               Start="0,0"
-              End="-387.104763439817,35.0166640551727">
+              End="-413.104763439817,35.0166640551729">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.2583320275863" />
+                    End="0,17.2583320275864" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.2583320275863"
-                    Point2="0,21.2583320275863"
-                    Point3="-4,21.2583320275863" />
+                    Point1="0,17.2583320275864"
+                    Point2="0,21.2583320275864"
+                    Point3="-4,21.2583320275864" />
                   <mssgle:LineSegment
-                    End="-383.104763439817,21.2583320275863" />
+                    End="-409.104763439817,21.2583320275864" />
                   <mssgle:CubicBezierSegment
-                    Point1="-383.104763439817,21.2583320275863"
-                    Point2="-387.104763439817,21.2583320275863"
-                    Point3="-387.104763439817,25.2583320275863" />
+                    Point1="-409.104763439817,21.2583320275864"
+                    Point2="-413.104763439817,21.2583320275864"
+                    Point3="-413.104763439817,25.2583320275864" />
                   <mssgle:LineSegment
-                    End="-387.104763439817,35.0166640551727" />
+                    End="-413.104763439817,35.0166640551729" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5923,6 +5276,109 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container\For Loop Container\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination"
+          TopLeft="294.166650594109,398.399997396469" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Sequence Container\For Loop Container\Data Flow Task\Derived Column"
+          TopLeft="301.666650184328,206.399999493758" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Sequence Container\For Loop Container\Data Flow Task\Row Count"
+          TopLeft="317.499982652566,294.599998029272" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Sequence Container\For Loop Container\Data Flow Task\Flat File Source"
+          TopLeft="297.499983745317,99.4666659916772" />
+        <EdgeLayout
+          Id="Package\Sequence Container\For Loop Container\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="380.183316418447,247.999999493758">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.5999985355137"
+              Start="0,0"
+              End="0,39.0999985355137">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.0999985355137" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\For Loop Container\Data Flow Task.Paths[Row Count Output 1]"
+          TopLeft="381.033316623337,336.199998029272">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62.1999993671974"
+              Start="0,0"
+              End="0,54.6999993671974">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.6999993671974" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\For Loop Container\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="375.583316964822,141.066665991677">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65.3333335020806"
+              Start="0,0"
+              End="0,57.8333335020806">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.8333335020806" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\For Loop Container\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\For Loop Container\Import Coin List">
     <LayoutInfo>
@@ -6008,7 +5464,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Sequence Container\For Loop Container\Import Exchanges">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="161.6,41.6"
           Id="Package\Sequence Container\For Loop Container\Import Exchanges\Script Component"
@@ -6040,9 +5496,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6064,9 +5518,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6074,83 +5526,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\For Loop Container\Import Exchanges\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\Foreach Loop Container\Data Flow Task">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination"
-          TopLeft="340.833331201639,263.533329482145" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Script Component 1"
-          TopLeft="340.833314711022,64.1333328873582" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Sequence Container\Foreach Loop Container\Data Flow Task\Row Count"
-          TopLeft="356.66664717926,171.399998824795" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Foreach Loop Container\Data Flow Task.Paths[Output 0]"
-          TopLeft="423.749980945141,105.733332887358">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65.666665937437"
-              Start="0,0"
-              End="0,58.166665937437">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.166665937437" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Foreach Loop Container\Data Flow Task.Paths[Row Count Output 1]"
-          TopLeft="423.94998919045,212.999998824795">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.5333306573496"
-              Start="0,0"
-              End="0,43.0333306573496">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.0333306573496" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Foreach Loop Container\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
